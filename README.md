@@ -1,3 +1,7 @@
+[![Python CI](https://github.com/shreyapatil9480/business-data-analytics-project/actions/workflows/python-ci.yml/badge.svg)](https://github.com/shreyapatil9480/business-data-analytics-project/actions/workflows/python-ci.yml)
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![pytest](https://img.shields.io/badge/tested%20with-pytest-0A9EDC)
+
 # Business Data Analytics Project
 
 Which shifts meet throughput SLA?
@@ -22,6 +26,14 @@ pip install -r requirements.txt
 jupyter notebook notebooks/analysis.ipynb
 ```
 
+
+## Testing
+
+```bash
+pip install -r requirements.txt
+pytest tests/ --cov=src
+```
+
 ## CLI Usage
 
 ```bash
@@ -37,3 +49,10 @@ Containerize training pipeline for scheduled retraining.
 *Analytics portfolio project — 2025-10*
 
 <!-- build 8 -->
+
+### Implemented
+
+```bash
+pip install -r requirements.txt
+docker build -t train . && docker compose run train
+```
